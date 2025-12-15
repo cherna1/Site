@@ -1,0 +1,286 @@
+/* === ПЕРЕМЕННЫЕ === */
+:root {
+    --color-background: #E2DECD; /* Бежевый фон */
+    --color-primary: #799A95; /* Основной (зеленый) цвет */
+    --color-text-main: #000000; 
+    --color-text-secondary: #373737; 
+    --color-white: #ffffff;
+}
+
+/* === ОБЩИЕ СТИЛИ И СБРОСЫ === */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Golos Text', sans-serif;
+    color: var(--color-text-main);
+    background-color: var(--color-background);
+}
+
+/* Настройки для фона с линиями */
+body {
+    background-image: url('background lines.svg'); 
+    background-position: center top; /* Центрируем фон, прижимаем к верху */
+    background-repeat: repeat-y; 
+    background-size: auto 100%; /* Убираем cover, чтобы фон был меньше */
+}
+
+/* Ограничивающий контейнер */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.section {
+    padding: 60px 0;
+}
+
+.section-title {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+
+/* Универсальная кнопка */
+.btn {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #5e7a76;
+}
+
+
+/* ======================== HEADER ======================== */
+.header {
+    background-color: var(--color-primary);
+    padding: 15px 0;
+    border-top: 2px solid var(--color-white);
+    border-bottom: 2px solid var(--color-white);
+}
+
+.header-content {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    max-height: 70px; 
+}
+
+.nav-menu {
+    display: flex; 
+    gap: 30px;
+}
+
+.menu-link {
+    color: var(--color-background);
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: lowercase;
+}
+
+
+/* ======================== СЕКЦИЯ ОБО МНЕ ======================== */
+.about-text {
+    font-size: 20px;
+    line-height: 1.5;
+    max-width: 800px;
+    margin-bottom: 30px;
+}
+
+.goal-wrapper {
+    display: flex;
+    justify-content: flex-end; /* Выравнивает блок цели справа */
+}
+
+.goal-box {
+    max-width: 650px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.4;
+    background-color: var(--color-white);
+    /* Двойная рамка: внешняя зеленая, внутренняя белая */
+    border: 2px solid var(--color-primary);
+    box-shadow: inset 0 0 0 5px var(--color-white); 
+    padding: 30px;
+}
+
+/* ======================== СЕКЦИЯ НАВЫКИ ======================== */
+.skills-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap; 
+    justify-content: center;
+}
+
+.skill-card {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    padding: 20px;
+    border-radius: 15px;
+    flex: 1; /* Растягиваются равномерно */
+    min-width: 200px;
+    text-align: center;
+    border: 2px solid var(--color-white);
+}
+
+.skill-card h3 {
+    margin-bottom: 5px;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.skill-card p {
+    font-size: 16px;
+}
+
+/* ======================== СЕКЦИЯ ПРОЕКТЫ ======================== */
+.project-card {
+    background-color: var(--color-white);
+    border-radius: 30px;
+    padding: 50px;
+    margin-bottom: 80px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
+
+.project-header {
+    display: flex;
+    align-items: baseline;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.project-num {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.project-name {
+    font-size: 24px;
+    color: var(--color-primary);
+    font-weight: 600;
+}
+
+.project-content {
+    display: flex;
+    gap: 40px; 
+}
+
+.project-column {
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.image-wrapper {
+    width: 100%;
+    height: 350px; 
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.project-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+    transition: transform 0.5s;
+}
+
+.project-btn {
+    display: block;
+    width: fit-content;
+    margin-left: auto; /* Прижать кнопку вправо */
+    margin-top: 30px;
+}
+
+/* ======================== ФОРМА КОНТАКТОВ ======================== */
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: var(--color-white);
+    padding: 40px;
+    border-radius: 20px;
+}
+
+.input-field {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.textarea-field {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.btn-submit {
+    width: 100%;
+    font-size: 18px;
+}
+
+
+/* ======================== FOOTER ======================== */
+.footer {
+    background-color: var(--color-primary);
+    color: var(--color-background);
+    padding: 20px 0;
+    border-top: 2px solid var(--color-white);
+    border-bottom: 2px solid var(--color-white);
+    margin-top: 50px;
+}
+
+.footer-content {
+    display: flex;
+    /* Выравнивание по краям: Заголовок СВЯЗЬ СО МНОЙ, Иконки, Копирайт */
+    justify-content: space-between; 
+    align-items: center;
+    flex-wrap: wrap; /* Для адаптива */
+}
+
+.footer-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--color-white);
+    margin: 0;
+    padding-right: 20px; /* Отступ от иконок */
+}
+
+.socials {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.socials img {
+    width: 30px;
+    height: 30px;
+}
+
+.footer-copy {
+    font-size: 14px;
+    margin: 0;
+}
+

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Данил Завьялов | Портфолио</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;600;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container header-content">
+            <img src="1764853244-Photoroom_1_(1).png" alt="Логотип" class="logo"> 
+            
+            <nav class="nav-menu">
+                <a href="#projects" class="menu-link">работы</a>
+                <a href="#about" class="menu-link">обо мне</a>
+                <a href="#contacts" class="menu-link">контакты</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title">ОБО МНЕ</h2>
+                
+                <p class="about-text">
+                    Привет! Это мое портфолио. Здесь я собрал проекты, которыми горжусь. Я верю, что хороший сайт должен быть не только красивым, но и логичным внутри.
+                </p>
+
+                <div class="goal-wrapper">
+                    <div class="goal-box">
+                        Моя цель — сделать так, чтобы пользователь наслаждался интерфейсом, а бизнес получал заявки.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-skills">
+            <div class="container">
+                <h2 class="section-title">ЧТО Я УМЕЮ</h2>
+                
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <h3>HTML5</h3>
+                        <p>Семантическая и валидная вёрстка</p>
+                    </div>
+                    <div class="skill-card">
+                        <h3>CSS3</h3>
+                        <p>Flexbox, Grid, красивые анимации</p>
+                    </div>
+                    <div class="skill-card">
+                        <h3>JavaScript</h3>
+                        <p>Интерактив и логика интерфейсов</p>
+                    </div>
+                    <div class="skill-card">
+                        <h3>Figma</h3>
+                        <p>Работа с макетами и стилями</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <div class="container">
+                <h2 class="section-title">ПРОЕКТЫ</h2>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <span class="project-num">№1</span>
+                        <h3 class="project-name">Книжный интернет-магазин</h3>
+                    </div>
+
+                    <div class="project-content">
+                        <div class="project-column">
+                            <div class="image-wrapper">
+                                <img src="Group_13.svg" alt="Скриншот 1" class="project-img">
+                            </div>
+                            <p class="project-desc">
+                                Реализована удобная навигация с разделами по жанрам и интуитивно понятная форма поиска.
+                            </p>
+                        </div>
+
+                        <div class="project-column">
+                            <div class="image-wrapper">
+                                <img src="Group_14_(1).svg" alt="Скриншот 2" class="project-img">
+                            </div>
+                            <p class="project-desc">
+                                Вёрстка включает в себя карусель бестселлеров и адаптивные окна. Дизайн под мобильные устройства.
+                            </p>
+                        </div>
+                    </div>
+
+                    <a href="#" class="btn project-btn">Посмотреть сайт</a>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <span class="project-num">№2</span>
+                        <h3 class="project-name">Интернет-магазин подарков</h3>
+                    </div>
+
+                    <div class="project-content">
+                        <div class="project-column">
+                            <div class="image-wrapper">
+                                <img src="Group_15.svg" alt="Скриншот 1" class="project-img">
+                            </div>
+                            <p class="project-desc">
+                                Полная фронтенд-разработка каталога и страниц товаров для сервиса подбора и доставки подарков. Основная задача — создать эмоционально привлекательный и функциональный интерфейс.
+                            </p>
+                        </div>
+
+                        <div class="project-column">
+                            <div class="image-wrapper">
+                                <img src="ramka.svg" alt="Скриншот 2" class="project-img">
+                            </div>
+                            <p class="project-desc">
+                                Разработка интерактивной и высококонверсионной секции выбора подарков. Этот блок демонстрирует умение верстать сложные, повторяющиеся элементы (карточки) в адаптивной галерее.
+                            </p>
+                        </div>
+                    </div>
+
+                    <a href="#" class="btn project-btn">Посмотреть сайт</a>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="contacts" class="section section-contacts">
+            <div class="container">
+                <form class="contact-form">
+                    <input type="text" placeholder="Ваше имя" class="input-field" required>
+                    <input type="email" placeholder="Ваш Email" class="input-field" required>
+                    <textarea placeholder="Напишите ваше сообщение" class="input-field textarea-field" required></textarea>
+                    
+                    <button type="submit" class="btn btn-submit">Заказать вёрстку</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <h4 class="footer-title">СВЯЗЬ СО МНОЙ</h4>
+            
+            <div class="socials">
+                <a href="#"><img src="vkbutton.svg" alt="VK"></a>
+                <a href="#"><img src="telegrambutton.svg" alt="TG"></a>
+                <a href="#"><img src="iandexbutton.svg" alt="Ya"></a>
+            </div>
+            <p class="footer-copy">© 2025 Данил Завьялов. Все права защищены.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
