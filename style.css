@@ -1,12 +1,3 @@
-/* === ПЕРЕМЕННЫЕ === */
-:root {
-    --color-background: #E2DECD; 
-    --color-primary: #799A95; 
-    --color-text-main: #000000; 
-    --color-text-secondary: #373737; 
-    --color-white: #ffffff;
-}
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -15,267 +6,217 @@
 
 body {
     font-family: 'Golos Text', sans-serif;
-    color: var(--color-text-main);
-    background-color: var(--color-background);
+    color: #000;
+    background-color: #E2DECD;
+    background-image: url('background lines.svg');
+    background-position: center top;
+    background-repeat: repeat-y;
+    background-size: auto 100%;
 }
 
-
-body {
-    background-image: url('background lines.svg'); 
-    background-position: center top; 
-    background-repeat: repeat-y; 
-    background-size: auto 100%; 
-}
-
-
-.container {
+.wrap {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
 }
 
-.section {
+.unit {
     padding: 60px 0;
 }
 
-.section-title {
+.title {
     font-size: 42px;
-    font-weight: 700;
     margin-bottom: 40px;
     text-transform: uppercase;
 }
 
-
 .btn {
-    background-color: var(--color-primary);
-    color: var(--color-white);
+    background-color: #799A95;
+    color: #fff;
     padding: 15px 30px;
     border-radius: 5px;
     text-decoration: none;
     font-weight: 600;
-    transition: background-color 0.3s;
+    display: inline-block;
     border: none;
     cursor: pointer;
 }
 
-.btn:hover {
-    background-color: #5e7a76;
+.wide {
+    width: 100%;
 }
 
-
-/* ======================== HEADER ======================== */
 .header {
-    background-color: var(--color-primary);
+    background-color: #799A95;
     padding: 15px 0;
-    border-top: 2px solid var(--color-white);
-    border-bottom: 2px solid var(--color-white);
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
 }
 
-.header-content {
-    display: flex; 
+.header-box {
+    display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .logo {
-    max-height: 70px; 
+    max-height: 70px;
 }
 
-.nav-menu {
-    display: flex; 
-    gap: 30px;
+.menu {
+    display: flex;
 }
 
-.menu-link {
-    color: var(--color-background);
+.link {
+    color: #E2DECD;
     text-decoration: none;
-    font-size: 18px;
     font-weight: 600;
-    text-transform: lowercase;
+    margin-left: 30px;
 }
 
-
-.about-text {
+.text {
     font-size: 20px;
     line-height: 1.5;
     max-width: 800px;
     margin-bottom: 30px;
 }
 
-.goal-wrapper {
-    display: flex;
-    justify-content: flex-end; 
-}
-
-.goal-box {
+.goal {
     max-width: 650px;
+    margin-left: auto;
     font-size: 20px;
     font-weight: 600;
-    line-height: 1.4;
-    background-color: var(--color-white);
-    border: 2px solid var(--color-primary);
-    box-shadow: inset 0 0 0 5px var(--color-white); 
+    background-color: #fff;
+    border: 2px solid #799A95;
     padding: 30px;
 }
 
-.skills-grid {
+.grid {
     display: flex;
-    gap: 20px;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
     justify-content: center;
+    margin: -10px;
 }
 
-.skill-card {
-    background-color: var(--color-primary);
-    color: var(--color-white);
+.card {
+    background-color: #799A95;
+    color: #fff;
     padding: 20px;
     border-radius: 15px;
-    flex: 1; 
+    flex: 1;
     min-width: 200px;
     text-align: center;
-    border: 2px solid var(--color-white);
+    border: 2px solid #fff;
+    margin: 10px;
 }
 
-.skill-card h3 {
-    margin-bottom: 5px;
-    font-size: 22px;
-    font-weight: 700;
-}
-
-.skill-card p {
-    font-size: 16px;
-}
-
-
-.project-card {
-    background-color: var(--color-white);
+.item {
+    background-color: #fff;
     border-radius: 30px;
     padding: 50px;
-    margin-bottom: 80px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    margin-bottom: 40px;
 }
 
-.project-header {
+.top {
     display: flex;
     align-items: baseline;
-    gap: 20px;
     margin-bottom: 30px;
 }
 
-.project-num {
+.num {
     font-size: 32px;
     font-weight: 700;
+    margin-right: 20px;
 }
 
-.project-name {
+.name {
+    color: #799A95;
     font-size: 24px;
-    color: var(--color-primary);
-    font-weight: 600;
 }
 
-.project-content {
+.box {
     display: flex;
-    gap: 40px; 
 }
 
-.project-column {
-    flex: 1; 
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+.col {
+    flex: 1;
 }
 
-.image-wrapper {
+.col:first-child {
+    margin-right: 40px;
+}
+
+.img {
     width: 100%;
-    height: 350px; 
     border-radius: 10px;
-    overflow: hidden;
+    margin-bottom: 20px;
 }
 
-.project-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: top center;
-    transition: transform 0.5s;
-}
-
-.project-btn {
+.item .btn {
     display: block;
     width: fit-content;
-    margin-left: auto; 
+    margin-left: auto;
     margin-top: 30px;
 }
 
-.contact-form {
+.info {
+    text-align: center;
+    margin-top: 60px;
+    padding: 30px;
+    border-top: 2px solid #799A95;
+}
+
+.form {
     max-width: 600px;
     margin: 0 auto;
-    background-color: var(--color-white);
+    background-color: #fff;
     padding: 40px;
     border-radius: 20px;
 }
 
-.input-field {
+.input {
     width: 100%;
     padding: 15px;
     margin-bottom: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    font-family: inherit;
     font-size: 16px;
-    box-sizing: border-box;
 }
 
-.textarea-field {
+.area {
     min-height: 150px;
     resize: vertical;
 }
 
-.btn-submit {
-    width: 100%;
-    font-size: 18px;
-}
-
-
-
 .footer {
-    background-color: var(--color-primary);
-    color: var(--color-background);
+    background-color: #799A95;
+    color: #E2DECD;
     padding: 20px 0;
-    border-top: 2px solid var(--color-white);
-    border-bottom: 2px solid var(--color-white);
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
     margin-top: 50px;
 }
 
-.footer-content {
+.foot-box {
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap; 
 }
 
-.footer-title {
-    font-size: 18px;
-    font-weight: 600;
-    color: var(--color-white);
-    margin: 0;
-    padding-right: 20px; 
+.foot-title {
+    color: #fff;
 }
 
 .socials {
     display: flex;
-    gap: 15px;
     align-items: center;
 }
 
-.socials img {
-    width: 30px;
-    height: 30px;
+.socials a {
+    margin-right: 15px;
+    display: flex;
 }
 
-.footer-copy {
+.copy {
     font-size: 14px;
-    margin: 0;
 }
-
-
